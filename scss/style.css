@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+  font: 1em 'Montserrat';
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header__menu {
+  padding: 18px 0;
+}
+
+._container {
+  max-width: 943px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__list li {
+  list-style: none;
+}
+
+.menu__list li a {
+  display: block;
+  color: #3d2e2e;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu__list li a:hover {
+  color: #5e6d49;
+}
+
+.menu__list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item_active {
+  font-weight: 600;
+}
+
+hr {
+  max-width: 943px;
+  padding: 0 5px;
+}
+
+.content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 5px 35px 5px;
+}
+
+.content__name {
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+}
+
+.content__skills {
+  margin: 30px 0 0 0;
+}
+
+.content__lang {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin: 0 -15px 0 0;
+  font-weight: 600;
+}
+
+.content__lang p {
+  color: #798283;
+}
+
+.content__lang p span {
+  color: black;
+}
+
+.content__img {
+  max-width: 940px;
+  min-height: 387px;
+  background: no-repeat center/100% url("../assets/BSPP2266.jpg");
+  background-position: 0 45%;
+}
+
+.about__container {
+  height: 500px;
+  margin-top: 70px;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f6f6f6;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__title {
+  padding-bottom: 20px;
+}
+
+.about__descr {
+  font-weight: 600;
+}
+
+.about__descr p {
+  padding: 10px 0;
+}
+
+.skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 600px;
+}
+
+.skills__content {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skills__title {
+  padding: 40px;
+}
+
+.skills__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.item__img {
+  width: 155px;
+  height: 94px;
+}
+
+.item__title {
+  padding: 20px;
+}
+
+.portfolio__container {
+  background-color: #f6f6f6;
+}
+
+.portfolio__content {
+  text-align: center;
+}
+
+.portfolio__title {
+  padding: 70px 0 60px 0;
+}
+
+.portfolio__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio__img p {
+  padding: 20px 0 90px 0;
+}
+
+.footer__container {
+  min-height: 624px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer__title {
+  padding: 20px;
+}
+
+.footer__subtitle {
+  padding-bottom: 30px;
+}
+
+.footer__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+}
+
+.footer__descr {
+  font-weight: 400;
+  color: #9c9c9c;
+  font-size: 14px;
+}
+
+.send-btn {
+  color: white;
+  height: 40px;
+  width: 190px;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 90px;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-box-shadow: 0px 10px 21px -5px rgba(34, 60, 80, 0.26);
+          box-shadow: 0px 10px 21px -5px rgba(34, 60, 80, 0.26);
+}
+
+.logo {
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */

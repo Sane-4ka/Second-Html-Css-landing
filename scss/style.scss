@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+    font: 1em 'Montserrat';
+    padding-inline-start: 0;
+}
+.title {
+    font-weight: 800;
+    font-size: 30px;
+}
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+.header {
+		&__menu {
+            padding: 18px 0;
+		}
+}
+._container {
+    max-width: 943px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.menu {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+        }
+        li a {
+            display: block;
+            color: rgb(61, 46, 46);
+            text-align: center;
+            text-decoration: none;
+            &:hover {
+                color: rgb(94, 109, 73);
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__item_active {
+        font-weight: 600;
+    }
+}
+hr {
+    max-width: 943px;
+    padding: 0 5px;
+}
+
+.content {
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 5px 35px 5px;
+    }
+
+    &__name {
+        line-height: 40px;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        font-size: 20px;
+    }
+
+    &__skills {
+        margin: 30px 0 0 0;
+    }
+
+    &__lang {
+        transform: rotate(-90deg);
+        margin: 0 -15px 0 0;
+        font-weight: 600;
+        p {
+            color: rgb(121, 130, 131);
+            span {
+                color: black;
+            }
+        }
+    }
+
+    &__img {
+        max-width: 940px;
+        min-height: 387px;
+        background: no-repeat center/100% url('../assets/BSPP2266.jpg');
+        background-position: 0 45%;
+    }
+}
+.about {
+
+    &__container {
+        height: 500px;
+        margin-top: 70px;
+        padding-top: 20px;
+        display: flex;
+        background-color: #f6f6f6;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        padding-bottom: 20px;
+    }
+
+    &__descr {
+        font-weight: 600;
+        p {
+            padding: 10px 0;
+        }
+    }
+}
+.skills {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        min-height: 600px;
+    }
+
+    &__content {
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__title {
+        padding: 40px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+.item {
+
+    &__img {
+        width: 155px;
+        height: 94px;
+    }
+
+    &__title {
+        padding: 20px;
+        
+    }
+}
+// ------------PORTFOLIO------------
+.portfolio {
+
+    &__container {
+        background-color: #f6f6f6;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        padding: 70px 0 60px 0;
+    }
+
+    &__img {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            padding: 20px 0 90px 0;
+        }
+    }
+}
+// ----------FOOTER----------
+.footer {
+
+    &__container {
+        min-height: 624px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        padding: 20px;
+    }
+
+    &__subtitle {
+        padding-bottom: 30px;
+    }
+
+    &__btn {
+
+    }
+
+    &__logos {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    &__descr {
+        font-weight: 400;
+        color: #9c9c9c;
+        font-size: 14px;
+    }
+}
+.send-btn {
+    color: white;
+    height: 40px;
+    width: 190px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 90px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0px 10px 21px -5px rgba(34, 60, 80, 0.26);
+}
+.logo {
+    padding: 10px;
+}
+
+
+
